@@ -60,7 +60,7 @@ nav {
 }
 
 .btn--order {
-  margin-top: 2rem;
+  margin-top: auto;
   border-radius: 0.1rem;
   font-size: 1.2rem;
   text-decoration: none;
@@ -178,6 +178,9 @@ nav {
 }
 
 .menu--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 240px;
   height: 400px;
   background-color: #f7f8fd;
@@ -201,9 +204,10 @@ nav {
   height: 100%;
   width: 100%;
   text-align: center;
-  display: flex;
   padding: 0 1rem;
+  margin-bottom: 2rem;
   line-height: 1.5rem;
+  /* background-color: #1d9bac; */
 }
 
 .menu--card__content__text {
