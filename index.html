@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="">
+    <link href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/css/brands.css" rel="stylesheet" />
+    <link href="assets/css/regular.css" rel="stylesheet" />
+    <link href="assets/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/all.css">
     <title>Document</title>
   </head>
   <body>
@@ -24,6 +30,9 @@
       </div>
     </nav>
     <div class="home-hero">
+      <video autoplay muted loop id="home-hero--background-video">
+        <source src="assets/video.mp4" type="video/mp4" />
+      </video>
       <div class="home-hero--container">
         <h1>Welcome to The Brew House</h1>
         <a href="#" class="btn btn--cta">Order Now</a>
@@ -61,9 +70,10 @@
       <div class="menu--container">
         <div class="menu--card">
           <div class="menu--card__header">
-            <h1>Espresso</h1>
+            <h2>Espresso</h2>
           </div>
           <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
             <div class="menu--card__content__text">
               <p>
                 A single shot of our signature espresso, made with beans sourced
@@ -71,14 +81,15 @@
                 Available in small, medium, and large.
               </p>
             </div>
-            <button class="btn btn--order">Order</button>
+            <button class="btn btn--order">Read More</button>
           </div>
         </div>
         <div class="menu--card">
           <div class="menu--card__header">
-            <h1>Latte</h1>
+            <h2>Latte</h2>
           </div>
           <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
             <div class="menu--card__content__text">
               <p>
                 Made with espresso and steamed milk, this classic drink is
@@ -86,14 +97,15 @@
                 coffee. Available in small, medium, and large.
               </p>
             </div>
-            <button class="btn btn--order">Order</button>
+            <button class="btn btn--order">Read More</button>
           </div>
         </div>
         <div class="menu--card">
           <div class="menu--card__header">
-            <h1>Cold Brew</h1>
+            <h2>Cold Brew</h2>
           </div>
           <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
             <div class="menu--card__content__text">
               <p>
                 Our cold brew coffee is steeped for 12 hours, resulting in a
@@ -101,14 +113,15 @@
                 milk. Available in small and large.
               </p>
             </div>
-            <button class="btn btn--order">Order</button>
+            <button class="btn btn--order">Read More</button>
           </div>
         </div>
         <div class="menu--card">
           <div class="menu--card__header">
-            <h1>Cappuccino</h1>
+            <h2>Cappuccino</h2>
           </div>
           <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
             <div class="menu--card__content__text">
               <p>
                 This classic Italian coffee is made with a shot of espresso,
@@ -116,40 +129,135 @@
                 has a strong, bold flavor with a creamy texture.
               </p>
             </div>
-            <button class="btn btn--order">Order</button>
+            <button class="btn btn--order">Read More</button>
           </div>
         </div>
         <div class="menu--card">
           <div class="menu--card__header">
-            <h1>Mocha</h1>
+            <h2>Mocha</h2>
           </div>
           <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
             <div class="menu--card__content__text">
               <p>
                 A decadent coffee drink made with a shot of espresso, steamed
                 milk, and a rich chocolate syrup. Our mochas are topped with
-                whipped cream and a sprinkle of cocoa powder, making it the
-                perfect indulgence on a chilly day.
+                whipped cream and a sprinkle of cocoa powder.
               </p>
             </div>
-            <button class="btn btn--order">Order</button>
+            <button class="btn btn--order">Read More</button>
           </div>
         </div>
         <div class="menu--card">
           <div class="menu--card__header">
-            <h1>Americano</h1>
+            <h2>Americano</h2>
           </div>
           <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
             <div class="menu--card__content__text">
               <p>
                 A classic coffee drink made with a shot of espresso and hot
                 water. The Americano has a bold, rich flavor that's similar to
-                drip coffee, but with a smoother, more nuanced taste. It's a
-                great choice for those who enjoy a strong cup of coffee without
-                the added milk or sweetness.
+                drip coffee, but with a smoother, more nuanced taste.
               </p>
             </div>
-            <button class="btn btn--order">Order</button>
+            <button class="btn btn--order">Read More</button>
+          </div>
+        </div>
+        <div class="menu--card">
+          <div class="menu--card__header">
+            <h2>Americano</h2>
+          </div>
+          <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
+            <div class="menu--card__content__text">
+              <p>
+                A classic coffee drink made with a shot of espresso and hot
+                water. The Americano has a bold, rich flavor that's similar to
+                drip coffee, but with a smoother, more nuanced taste.
+              </p>
+            </div>
+            <button class="btn btn--order">Read More</button>
+          </div>
+        </div>
+        <div class="menu--card">
+          <div class="menu--card__header">
+            <h2>Mocha</h2>
+          </div>
+          <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
+            <div class="menu--card__content__text">
+              <p>
+                A decadent coffee drink made with a shot of espresso, steamed
+                milk, and a rich chocolate syrup. Our mochas are topped with
+                whipped cream and a sprinkle of cocoa powder.
+              </p>
+            </div>
+            <button class="btn btn--order">Read More</button>
+          </div>
+        </div>
+        <div class="menu--card">
+          <div class="menu--card__header">
+            <h2>Cappuccino</h2>
+          </div>
+          <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
+            <div class="menu--card__content__text">
+              <p>
+                This classic Italian coffee is made with a shot of espresso,
+                steamed milk, and a layer of frothed milk on top. The cappuccino
+                has a strong, bold flavor with a creamy texture.
+              </p>
+            </div>
+            <button class="btn btn--order">Read More</button>
+          </div>
+        </div>
+        <div class="menu--card">
+          <div class="menu--card__header">
+            <h2>Cold Brew</h2>
+          </div>
+          <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
+            <div class="menu--card__content__text">
+              <p>
+                Our cold brew coffee is steeped for 12 hours, resulting in a
+                smooth and refreshing drink. Served over ice with a splash of
+                milk. Available in small and large.
+              </p>
+            </div>
+            <button class="btn btn--order">Read More</button>
+          </div>
+        </div>
+        <div class="menu--card">
+          <div class="menu--card__header">
+            <h2>Latte</h2>
+          </div>
+          <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
+            <div class="menu--card__content__text">
+              <p>
+                Made with espresso and steamed milk, this classic drink is
+                perfect for those who want a little extra creaminess in their
+                coffee. Available in small, medium, and large.
+              </p>
+            </div>
+            <button class="btn btn--order">Read More</button>
+          </div>
+        </div>
+        <div class="menu--card">
+          <div class="menu--card__header">
+            <h2>Espresso</h2>
+          </div>
+          <div class="menu--card__content">
+            <div class="menu--card__icon"><i class="fa-solid fa-mug-saucer fa-3x icon__gray"></i></div>
+            <div class="menu--card__content__text">
+              <p>
+                A single shot of our signature espresso, made with beans sourced
+                from local farmers. Rich and robust with a smooth finish.
+                Available in small, medium, and large.
+              </p>
+            </div>
+            <button class="btn btn--order">Read More</button>
           </div>
         </div>
       </div>

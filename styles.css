@@ -18,6 +18,7 @@ nav {
   height: 8vh;
   width: 100%;
   background-color: #1e1e1e;
+  z-index: 10;
 }
 
 .nav--items__container {
@@ -79,6 +80,10 @@ nav {
   flex-direction: row;
 }
 
+.icon__gray {
+  color: #888;
+}
+
 /* HOME SECTION */
 
 .home-hero {
@@ -87,12 +92,22 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("assets/background.jpg");
+  /* background-image: url("assets/background.jpg"); */
   height: 100%;
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+}
+
+#home-hero--background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .home-hero--container {
@@ -100,6 +115,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 1;
 }
 
 .home-hero--container h1 {
@@ -145,7 +161,8 @@ nav {
 
 /* MENU SECTION */
 .parallax--menu {
-  background-image: url("assets/background-menu.jpg");
+  background-image: url("assets/background.jpg");
+  /* background-color: #f7f8fd; */
   height: 95vh;
   background-attachment: fixed;
   background-position: center;
@@ -154,7 +171,7 @@ nav {
 }
 
 .menu--title {
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   width: 80%;
   margin: auto;
 }
@@ -162,17 +179,18 @@ nav {
 .menu--title h1 {
   font-size: 1.5rem;
   text-align: center;
-  color: #1e1e1e;
+  color: #fff;
+  /* text-shadow: 2px 2px #888; */
+  filter: drop-shadow(2px 2px #000);
 }
 
 .menu--container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+  grid-gap: 8px;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  /* padding: 2rem 0; */
   max-width: 1600px;
   margin: auto;
 }
@@ -191,7 +209,7 @@ nav {
 .menu--card__header {
   width: 100%;
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .menu--card__header > h1 {
@@ -208,6 +226,12 @@ nav {
   margin-bottom: 2rem;
   line-height: 1.5rem;
   /* background-color: #1d9bac; */
+}
+
+.menu--card__icon {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .menu--card__content__text {
